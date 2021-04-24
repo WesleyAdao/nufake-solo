@@ -1,0 +1,43 @@
+<app-header></app-header>
+<section>
+
+<div class="container">
+
+    <div class="form-login">
+
+        <div class="campo-titulo">
+            <p class="titulo">Faça seu login</p>
+        </div>
+    
+        <!--<form #form="ngForm" (ngSubmit)="onSubmit(form)" class="formFields">-->
+    
+        <input 
+            type="text" 
+            name="login" 
+            placeholder="Digite seu usuário"
+        />
+        <input 
+            type="password" 
+            name="senha" 
+            placeholder="Digite sua senha"
+        />
+    
+        <button type="submit" class="botao-continuar">
+            <p class="botao-continuar__texto">Continuar</p>
+            <img src="../../assets/arrow-right.svg">
+        </button>
+    
+        <div class="campo-link">
+            <a routerLink="../recovery">
+                <p class="link">Esqueci minha senha</p>
+            </a>
+            <a routerLink="../home">
+                <p class="link">Ainda não sou cliente</p>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
